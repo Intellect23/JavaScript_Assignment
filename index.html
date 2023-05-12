@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Biography</title>
+    <style>
+        .imgage-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #my-photo{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            
+        }
+        #caption{
+            color: white;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <h2>Hey There I Am Agboola Ibrahim A Frontend Developer Nice Meeting You</h2>
+   <div class="image-container" > 
+    <img id="my-photo" src="./IMG_20230423_213816_505.jpg" alt="Image">
+</div>
+    <p>I am a frontend developer who is passionate about building interactive and educative website that allows the user to gain meaningful and helpful information to benefit them in various ways </p>
+    <div id="caption" onclick="changeText()">I am currently leraning HTML and CSS</div>
+    <script>
+        function changeText() {
+            var caption = document.getElementById("caption");
+            caption.innerHTML = "I am currently Learning JavaScript"
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
